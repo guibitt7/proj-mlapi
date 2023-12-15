@@ -1,0 +1,42 @@
+.Categories {
+    background-color: #f0ddee;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .Categories h2 {
+    background-color: #4b204b;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    color: #f0ddee;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .Categories button {
+    background-color: #be7abb;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    color: #341933;
+    cursor: pointer;
+    font-weight: 700;
+    height: 35px;
+  }
+  
+  .Categories button:hover {
+    background-color: #4b204b;
+    color: #be7abb;
+  }
+  
+  .Categories > .selected {
+    background-color: #4b204b;
+    color: #be7abb;
+  }

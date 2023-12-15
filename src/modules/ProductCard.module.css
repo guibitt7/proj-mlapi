@@ -1,0 +1,133 @@
+.productCard {
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    height: auto;
+    margin-bottom: 2px;
+    min-width: 416px;
+    overflow: hidden;
+    padding: 15px;
+    text-overflow: ellipsis;
+    width: 85%;
+  }
+  
+  .productImage {
+    height: 160px;
+    margin-right: 5px;
+    padding: 10px;
+    width: 160px;
+  }
+  
+  .productImage img {
+    width: 100%;
+  }
+  
+  .productBody {
+    display: flex;
+    text-decoration: none;
+    width: 80%;
+  }
+  
+  .productInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+  
+  }
+  
+  .productName {
+    color: #4b204b;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+  .productPrice {
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  
+  
+  .productCard button {
+    background-color: #be7abb;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    color: #001e1d;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px auto;
+    padding: 15px;
+    transition: 0.4s;
+  }
+  
+  .productCard button:hover {
+    background-color: #be7abb;
+  }
+  
+  .productCard span {
+    color: #00a650;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  @media screen and ( max-width : 400px ) {
+  
+    .productCard {
+      min-width: 300px;
+    }
+  
+    .productCard button {
+      display: none;
+    }
+  
+    .productFavorite {
+      top: -70px;
+    }
+  
+  }
+  
+  @media ( max-width : 767px ) {
+  
+    .productCard {
+      height: auto;
+      width: 75%;
+    }
+  
+    .productImage {
+      align-items: center;
+      display: flex;
+    }
+  
+    .productImage img {
+      height: 100px;
+      width: 150px;
+    }
+  
+    .productName {
+      font-size: 16px;
+    }
+  
+    .productCard button {
+      font-size: 14px;
+    }
+  
+  }
+  
+  @media screen and ( min-width : 768px ) and ( max-width : 1024px ) {
+  
+    .productCard {
+      width: 80%;
+    }
+  
+    .productCard button {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+  }
+  
