@@ -39,19 +39,19 @@
   }
   
   .menuOptions .active {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     height: 50px;
   }
   
   .menuCart button svg {
-    color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     font-size: 20px;
     position: relative;
   }
   
   .menuCart button span {
-    color: white;
+    color: rgb(17, 14, 14);
     cursor: pointer;
     left: 17px;
     position: absolute;
@@ -98,7 +98,7 @@
   }
   
   .quantity {
-    color: #4b204b;
+    color: #007bff;
     font-weight: 700;
     position: absolute;
     right: 0;
@@ -113,10 +113,10 @@
   }
   
   .menuContainer .buttonCheckout {
-    background-color: #be7abb;
+    background-color: #007bff;
     border: none;
     border-radius: 20px;
-    color: #4b204b;
+    color: #eef2f7;
     cursor: pointer;
     font-size: 20px;
     font-weight: 700;

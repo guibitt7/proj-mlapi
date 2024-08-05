@@ -1,126 +1,138 @@
 .header {
-    align-items: center;
-    background-color: #4b204b;
-    color: f0ddee;
-    display: flex;
-    font-family: var(--font);
-    justify-content: space-between;
-    left: 0;
-    padding: 30px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+  align-items: center;
+  background-color: #ffffff;
+  color: #333333;
+  display: flex;
+  font-family: var(--font);
+  justify-content: space-between;
+  padding: 15px 25px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  align-items: center;
+  display: flex;
+  font-size: 22px;
+  color: #007bff;
+}
+
+.header a {
+  color: #333333;
+  font-size: 32px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.cartContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cartContainer a {
+  color: #333333;
+  font-size: 32px;
+}
+
+.cartContainer a:hover,
+.cartContainer a:focus {
+  color: #28a745;
+  transition: color 0.3s;
+}
+
+.nav a:nth-child(1):hover {
+  color: #28a745;
+  transition: color 0.3s;
+}
+
+.cartContainer span {
+  border-radius: 12px;
+  color: #ffffff;
+  font-weight: 700;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #090a3d;
+}
+
+.navButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.navButton svg {
+  color: #333333;
+  font-size: 32px;
+}
+
+.header aside {
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: width 0.4s;
+  width: 0;
+}
+
+.header .activeMenu {
+  width: 50vw;
+}
+
+.menuContainer {
+  background-color: #f2f2f2;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  padding: 20px;
+}
+
+.close {
+  cursor: pointer;
+  font-size: 36px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #333333;
+}
+
+.close:hover {
+  color: #03dac6;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    padding: 10px 15px;
   }
-  
+
   .header h1 {
-    align-items: center;
-    display: flex;
+    font-size: 18px;
   }
-  
-  .header a {
-    color: #f0ddee;
-    font-size: 40px;
-    text-decoration: none;
-  }
-  
-  .nav {
-    display: flex;
-    gap: 30px;
-    justify-content: baseline;
-  }
-  
-  .cartContainer {
-    display: flex;
-    flex-direction: row;
-  }
-  
+
   .cartContainer a {
-    color: #f0ddee;
-    font-size: 40px;
-    margin: 0 auto;
+    font-size: 24px;
   }
-  
-  .cartContainer a:hover, .cartContainer a:focus {
-    color: #9a1c1c;
-    transition: 0.6s;
+
+  .nav {
+    gap: 15px;
   }
-  
-  .nav a:nth-child( 1 ):hover {
-    color: #e16162;
-    transition: 0.6s;
+
+  .nav a:nth-child(1) {
+    font-size: 24px;
   }
-  
-  .cartContainer span {
-    border-radius: 20px;
-    color: #be7abb;
-    font-weight: 700;
-    height: 5px;
-  }
-  
-  .navButton {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .navButton svg {
-    color: #f0ddee;
-    font-size: 40px;
-  }
-  
-  .header aside {
-    position: fixed;
-    right: 0;
-    top: 0;
-    transition: width 0.6s;
-    width: 0;
-  }
-  
+
   .header .activeMenu {
-    width: 40vw;
+    width: 100vw;
   }
-  
-  .menuContainer {
-    background-color: #341933;
-    height: 100vh;
-    overflow: hidden;
-    width: 100%;
-  }
-  
-  .close {
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    top: 20px;
-  }
-  
-  @media screen and ( max-width : 500px ) {
-  
-    .header {
-      padding: 20px 10px;
-    }
-  
-    .header h1 {
-      align-items: flex-start;
-      flex-direction: column;
-      font-size: 19px;
-    }
-  
-    .cartContainer a {
-      font-size: 28px;
-    }
-  
-    .nav {
-      gap: 15px;
-    }
-  
-    .nav a:nth-child( 1 ) {
-      font-size: 28px;
-    }
-  
-    .header .activeMenu {
-      width: 100vw;
-    }
-  
-  }
+}
+

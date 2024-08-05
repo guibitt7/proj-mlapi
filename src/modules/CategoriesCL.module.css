@@ -1,88 +1,94 @@
 .categoriesMobileContainer {
-    align-items: center;
-    border-radius: 0;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
-    display: flex;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 20px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.categoriesMobileContainer h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #007bff;
+}
+
+.close {
+  cursor: pointer;
+  font-size: 36px;
+  position: fixed;
+  right: 30px;
+  top: 120px;
+  transition: font-size 0.3s ease-in-out;
+  color: #007bff;
+}
+
+.close:hover {
+  font-size: 40px;
+}
+
+.categoriesMobileContainer aside {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0 0 20px;
+}
+
+.categoriesMobileContainer aside select {
+  background-color: #007bff;
+  color: #e0e0e0;
+  padding: 6px;
+  border-radius: 4px;
+  border: none;
+}
+
+.categoriesActions {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+
+.categoriesActions div {
+  display: flex;
+  flex-direction: column;
+}
+
+.categoryMobile {
+  background-color: transparent;
+  border: 1px solid #007bff;
+  color: #007bff;
+  font-weight: 700;
+  height: 35px;
+  margin-top: 10px;
+  width: 200px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.categoryMobile:hover, .categoryMobile:focus {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.categoryMobile > .selected {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 350px) {
+  .categoriesActions {
     flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    margin: 20px 0;
-    padding: 0;
+  }
+
+  .categoriesActions aside {
+    margin: 0;
+  }
+
+  .categoryMobile {
     width: 100%;
   }
-  
-  .categoriesMobileContainer h2 {
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-  
-  .close {
-    cursor: pointer;
-    font-size: 40px;
-    position: fixed;
-    right: 30px;
-    top: 126px;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .close:hover {
-    font-size: 45px;
-  }
-  
-  .categoriesMobileContainer aside {
-    display: flex;
-    flex-direction: column;
-    margin: 60px 0 0 20px;
-  }
-  
-  .categoriesMobileContainer aside select {
-    background-color: #4b204b;
-    color: #be7abb;
-    padding: 4px;
-  }
-  
-  .categoriesActions {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  
-  .categoriesActions div {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .categoryMobile {
-    background-color: transparent;
-    border: 1px solid black;
-    color: #4b204b;
-    font-weight: 800;
-    height: 30px;
-    margin-top: 10px;
-    width: 208px;
-  }
-  
-  .categoryMobile:hover, :focus {
-    background-color: #4b204b;
-    color: #be7abb;
-    transition: 0.5s;
-  }
-  
-  .categoryMobile > .selected {
-    background-color: #4b204b;
-    color: #be7abb;
-  }
-  
-  @media screen and ( max-width : 350px ) {
-  
-    .categoriesActions {
-      flex-direction: column;
-    }
-  
-    .categoriesActions aside {
-      margin: 0;
-    }
-  
-    .categoryMobile {
-      width: 100%;
-    }
-  }
+}

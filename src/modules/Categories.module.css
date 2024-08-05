@@ -1,42 +1,45 @@
 .Categories {
-    background-color: #f0ddee;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-top: 20px;
-    padding: 10px;
-    width: 100%;
-  }
-  
-  .Categories h2 {
-    background-color: #4b204b;
-    border-radius: 10px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    color: #f0ddee;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-  }
-  
-  .Categories button {
-    background-color: #be7abb;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    color: #341933;
-    cursor: pointer;
-    font-weight: 700;
-    height: 35px;
-  }
-  
-  .Categories button:hover {
-    background-color: #4b204b;
-    color: #be7abb;
-  }
-  
-  .Categories > .selected {
-    background-color: #4b204b;
-    color: #be7abb;
-  }
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.Categories h2 {
+  background-color: #007bff;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.Categories button {
+  background-color: #28a745;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 500;
+  height: 40px;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.Categories button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.Categories > .selected {
+  background-color: #007bff;
+  color: #ffffff;
+}
